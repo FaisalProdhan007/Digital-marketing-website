@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Faisal Ahmed</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container nav-container">
+      <h1 class="logo">Faisal<span>Ahmed</span></h1>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== PORTFOLIO HERO ===== -->
+  <section class="portfolio-hero">
+    <div class="container">
+      <h1> My Professional Portfolio</h1>
+      <p>
+        Over the past 7+ years, I’ve helped businesses, organizations, and personal brands grow their digital presence through 
+        strategic marketing, paid campaigns, website optimization, and creative content design. Below you’ll find some of my 
+        successful case studies, real-world results, and a video presentation showcasing my work process.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO PRESENTATION ===== -->
+  <section class="portfolio-video">
+    <div class="container">
+      <h2>🎥 My Project Highlights</h2>
+      <p>Here’s a short video overview of my recent digital marketing works and campaigns.</p>
+
+      <!-- Replace with your Fiverr video embed -->
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.fiverr.com/s/6Yod4lL" 
+          title="Fiverr Portfolio Video" 
+          frameborder="0" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO PROJECTS ===== -->
+  <section class="portfolio-section">
+    <div class="container">
+      <h2> My Featured Works</h2>
+
+      <div class="portfolio-grid">
+
+        <!-- Project 1 -->
+        <div class="portfolio-item">
+          <img src="assets/images/portfolio/project1.jpg" alt="Meta Ads Management">
+          <div class="portfolio-info">
+            <h3>Meta (Facebook & Instagram) Ads Management</h3>
+            <p>
+              Successfully set up and managed Meta Business Accounts, Pixel integrations, ad campaigns, and audience targeting — 
+              generating consistent engagement and leads. Specialized in political, social, and commercial ad verification and 
+              campaign execution.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="portfolio-item">
+          <img src="assets/images/portfolio/project5.jpg" alt="Google Ads & SEO Optimization">
+          <div class="portfolio-info">
+            <h3>Google Ads & SEO Optimization</h3>
+            <p>
+              Built and optimized Google Ads campaigns with measurable ROAS improvements. Improved local SEO rankings and website 
+              visibility through technical on-page optimization and Google Business Profile management.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="portfolio-item">
+          <img src="assets/images/portfolio/project2.jpg" alt="Website Development & CMS Setup">
+          <div class="portfolio-info">
+            <h3>Website Development & CMS Setup</h3>
+            <p>
+              Developed responsive websites using HTML, CSS, JavaScript, and WordPress CMS. Delivered complete website structures 
+              including SEO-friendly content and integrated analytics tracking.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="portfolio-item">
+          <img src="assets/images/portfolio/project3.jpg" alt="Social Media Content & Branding">
+          <div class="portfolio-info">
+            <h3>Social Media Content & Branding</h3>
+            <p>
+              Created and managed professional social media pages, visual branding, and post design strategies for brands on 
+              Facebook, Instagram, LinkedIn, and YouTube — maintaining consistent engagement and growth.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="portfolio-item">
+          <img src="assets/images/portfolio/project4.jpg" alt="Video & Audio Editing">
+          <div class="portfolio-info">
+            <h3>Video & Audio Editing</h3>
+            <p>
+              Edited marketing videos, YouTube intros, podcasts, and reels with clean sound enhancement, graphics, and storytelling — 
+              creating professional brand visuals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CLIENT FEEDBACK ===== -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>💬 Client Feedback</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p>“Faisal’s marketing strategy helped our real estate campaign reach the right audience and achieve excellent lead results. Highly recommended!”</p>
+          <h4>— Real Estate Client, USA</h4>
+        </div>
+        <div class="testimonial">
+          <p>“His expertise with Meta political ad verification saved us weeks of delay. True professional and reliable.”</p>
+          <h4>— Political Campaign Team</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Faisal Ahmed. All Rights Reserved.</p>
+      <div class="social-links">
+  <a href="https://www.linkedin.com/in/faisalahmed1996/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  <a href="https://www.facebook.com/share/19xuAgM1er/" target="_blank" rel="noopener noreferrer">Facebook</a>
+  <a href="https://www.instagram.com/faisalahmedprodhan?igsh=b2p0eWQwdjh6azIz" target="_blank" rel="noopener noreferrer">Instagram</a>
+</div>
+    </div>
+  </footer>
+
+  <!-- ===== SCROLL FADE-IN ANIMATION ===== -->
+  <script>
+    const elements = document.querySelectorAll('.portfolio-item, .testimonial, .portfolio-video, .portfolio-hero');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('fade-in');
+      });
+    }, { threshold: 0.1 });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
