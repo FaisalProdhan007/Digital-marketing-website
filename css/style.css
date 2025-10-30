@@ -540,6 +540,7 @@ blockquote::after {
 .special-expertise .section-title {
   font-size: 1.1rem;
   font-weight: 700;
+  text-align: center;
   letter-spacing: 2px;
   color: #4b6aff;
   text-transform: uppercase;
@@ -2744,5 +2745,6 @@ header {
     margin: 6px 8px;
   }
 }
+
 
 
