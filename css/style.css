@@ -134,6 +134,17 @@ nav ul li a.active::after {
   box-shadow: 0 12px 30px rgba(0,0,0,0.35);
 }
 
+/* ===== HERO IMAGE FIX FOR MOBILE ===== */
+.hero-image {
+  margin-top: 3px; /* Desktop default spacing */
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    margin-top: 40px; /* Add more top space for mobile */
+  }
+}
+
 .hero h2 {
   font-size: 2.8rem;
   margin-bottom: 10px;
@@ -336,6 +347,42 @@ nav ul li a.active::after {
   align-items: center;
 }
 
+blockquote {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0b132b;
+  line-height: 1.6;
+  background: #f4f7ff;
+  border-left: 6px solid #4b6aff;
+  padding: 25px 35px;
+  margin: 50px auto;
+  max-width: 800px;
+  border-radius: 12px;
+  font-style: italic;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+blockquote::before {
+  content: "“";
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  font-size: 4rem;
+  color: #4b6aff;
+  opacity: 0.2;
+}
+
+blockquote::after {
+  content: "”";
+  position: absolute;
+  bottom: -25px;
+  right: 25px;
+  font-size: 4rem;
+  color: #4b6aff;
+  opacity: 0.2;
+}
+
 /* Animated floating orbs background */
 .section::before,
 .section::after {
@@ -480,6 +527,53 @@ nav ul li a.active::after {
     padding: 35px 25px;
     font-size: 1rem;
   }
+}
+
+}/* Special Expertise Section */
+.special-expertise {
+  background: linear-gradient(180deg, #f9faff 0%, #eef2ff 100%);
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.special-expertise .section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #4b6aff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.special-expertise .section-headline {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #0b132b;
+  margin-bottom: 25px;
+}
+
+.special-expertise .section-intro {
+  max-width: 780px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* Optional soft glowing effect */
+.special-expertise::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(75,106,255,0.25) 0%, transparent 70%);
+  filter: blur(80px);
+  z-index: 0;
 }
 
 /* Expertise Cards Grid */
@@ -2651,3 +2745,4 @@ header {
     margin: 6px 8px;
   }
 }
+
