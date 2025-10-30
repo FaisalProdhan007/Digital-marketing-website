@@ -528,8 +528,7 @@ blockquote::after {
     font-size: 1rem;
   }
 }
-
-}/* Special Expertise Section */
+/* Special Expertise Section */
 .special-expertise {
   background: linear-gradient(180deg, #f9faff 0%, #eef2ff 100%);
   padding: 100px 20px;
@@ -2745,4 +2744,5 @@ header {
     margin: 6px 8px;
   }
 }
+
 
