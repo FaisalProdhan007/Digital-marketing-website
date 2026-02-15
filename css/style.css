@@ -2746,5 +2746,24 @@ header {
   }
 }
 
+.video-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.video-wrapper {
+  flex: 1;
+  min-width: 300px;
+  aspect-ratio: 16 / 9;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
 
 
