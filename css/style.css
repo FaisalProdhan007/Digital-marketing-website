@@ -2748,23 +2748,39 @@ header {
 
 .video-container {
   display: flex;
-  gap: 40px; /* gap কিছুটা বড় করলে spacious দেখাবে */
+  gap: 20px;
   flex-wrap: wrap;
-  margin-top: 50px; /* top margin একটু বড় করলে nicer spacing */
+  margin-top: 30px;
 }
 
+/* Video wrapper */
 .video-wrapper {
-  flex: 1 1 48%; /* 2 ভিডিও desktop-এ 48% width নেবে, responsive থাকবে */
-  min-width: 400px; /* old 300px → বড় করা হয়েছে */
+  flex: 1 1 48%; /* desktop: 2 videos side-by-side */
+  min-width: 300px;
   aspect-ratio: 16 / 9;
-  max-height: 600px; /* desktop-এ height limit, খুব বড় হলে awkward দেখাবে */
 }
 
+/* iframe inside wrapper */
 .video-wrapper iframe {
   width: 100%;
   height: 100%;
-  border-radius: 10px; /* slightly bigger radius */
+  border-radius: 10px;
 }
+
+/* ===== Mobile Fix ===== */
+@media (max-width: 768px) {
+  .video-wrapper {
+    flex: 1 1 100%; /* stack vertically on mobile */
+    min-width: 100%;
+    margin-bottom: 20px; /* spacing between videos */
+  }
+
+  .video-wrapper iframe {
+    height: auto; /* let height adjust automatically */
+  }
+}
+
+
 
 
 
