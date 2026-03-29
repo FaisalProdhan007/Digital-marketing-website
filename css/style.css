@@ -2967,4 +2967,101 @@ header {
   background: #0056b3;
 }
 
+/* ===== Case Studies Layout ===== */
+.case-study-card {
+  display: flex;
+  gap: 3rem;
+  margin: 3rem 0;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  flex-wrap: wrap; /* Makes layout wrap on smaller screens */
+  align-items: flex-start;
+}
 
+.case-image {
+  flex: 1 1 400px; /* Grow/shrink with a minimum width */
+}
+
+.case-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.case-content {
+  flex: 1 1 400px; /* Grow/shrink with a minimum width */
+}
+
+.case-content h3 {
+  margin-top: 0;
+}
+
+.case-metrics {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap; /* Makes metrics stack on small screens */
+}
+
+.metric {
+  background: #f7f9fc;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1 1 120px; /* Each card adapts width */
+}
+
+/* Case Details Styling */
+.case-details h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.case-details ul {
+  padding-left: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .case-study-card {
+    flex-direction: column; /* Stack image and content vertically */
+    gap: 2rem;
+  }
+
+  .case-metrics {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 600px) {
+  .case-metrics {
+    flex-direction: column; /* Metrics stack vertically */
+    gap: 1rem;
+  }
+
+  .metric {
+    flex: 1 1 100%; /* Full width metrics cards */
+  }
+
+  .btn {
+    width: 100%; /* CTA button full width on mobile */
+    text-align: center;
+  }
+}
