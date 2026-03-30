@@ -3246,3 +3246,53 @@ header {
   color: #cbd5f5;
   display: inline-block;
 }
+
+/* =========================
+   Table styling - Updated Colors
+   ========================= */
+.case-study table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: #1e293b; /* Dark card background */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.case-study th,
+.case-study td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #334155;
+  color: #f1f5f9; /* Lighter color for better readability */
+}
+
+.case-study th {
+  background-color: #0f172a; /* Darker header background for contrast */
+  color: #38bdf8; /* Bright blue for headings */
+  font-weight: 700;
+}
+
+.case-study tr:nth-child(even) {
+  background-color: rgba(56, 189, 248, 0.05); /* Slightly tinted even row for readability */
+}
+
+/* =========================
+   Tools & Platforms styling - Updated Colors
+   ========================= */
+.case-study .tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.case-study .tools span {
+  background-color: #0f172a; /* Darker badge background */
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #38bdf8; /* Bright blue text for contrast */
+  display: inline-block;
+  font-weight: 500;
+}
