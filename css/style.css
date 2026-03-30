@@ -3201,3 +3201,48 @@ header {
     padding: 6px 10px;
   }
 }
+
+/* Table styling */
+.case-study table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.case-study th,
+.case-study td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #334155;
+  color: #cbd5f5;
+}
+
+.case-study th {
+  background-color: #1e293b;
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+.case-study tr:nth-child(even) {
+  background-color: rgba(255,255,255,0.05);
+}
+
+/* Tools & Platforms styling */
+.case-study .tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.case-study .tools span {
+  background-color: #334155;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #cbd5f5;
+  display: inline-block;
+}
