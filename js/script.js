@@ -49,30 +49,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }, { threshold: 0.15 });
   // ------------------------------
-// Image Zoom (Lightbox)
-// ------------------------------
-const img = document.getElementById("proofImg");
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightboxImg");
-const closeBtn = document.querySelector(".close");
-
-if (img) {
-  img.onclick = function() {
-    lightbox.style.display = "block";
-    lightboxImg.src = this.src;
-  }
-
-  closeBtn.onclick = function() {
-    lightbox.style.display = "none";
-  }
-
-  lightbox.onclick = function(e) {
-    if (e.target !== lightboxImg) {
-      lightbox.style.display = "none";
-    }
-  }
-}
-
-  boxes.forEach((box) => observer.observe(box));
-});
-
